@@ -1,0 +1,16 @@
+{
+  "name": "layout-designer-project-56",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/TanyaAl/layout-designer-project-56/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/TanyaAl/layout-designer-project-56/actions)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanya",
+  "license": "ISC",
+  "devDependencies": {
+    "htmlhint": "^1.6.3",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^39.0.0"
+  }
+}
