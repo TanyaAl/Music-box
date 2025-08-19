@@ -5,9 +5,20 @@
     url('../../assets/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: Roboto, sans-serif;
   line-height: 1.5;
   color: #cacaca;
   background-color: #08020d;
+}
+
+.text-up {
+  text-transform: uppercase;
+  margin: 0;
 }
