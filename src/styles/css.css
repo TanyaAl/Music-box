@@ -24,6 +24,12 @@ body {
   text-align: center;
 }
 
+.btn {
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
 header {
   position: relative;
   display: flex;
@@ -102,14 +108,11 @@ header {
 }
 
 .subscribe-btn {
-  padding: 20px 30px;
-  border-radius: 5px;
   border: none;
   background-color: #34C176;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 13px;
-  box-sizing: border-box;
 }
 
 .subscribe-input {
@@ -183,11 +186,6 @@ h2 {
   gap: 50px;
 }
 
-.price-card {
-  width: 366px;
-  height: 615px;
-}
-
 .free {
   background-image: url("../../assets/images/subscribe_1.png");
   background-size: cover;
@@ -208,6 +206,37 @@ h2 {
 
 .disclaimer {
   max-width: 1200px;
+}
+
+.price-card {
+  width: 366px;
+  height: 615px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 1rem;
+}
+
+.card-title {
+  margin-top: 24px;
+  margin-bottom: 200px;
+  font-size: 24px;
+}
+
+.card-btn {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  width: 100%;
+}
+
+.currency-card {
+  font-size: 64px;
+  line-height: 1em;
+  display: flex;
+}
+
+.price-text-card {
+  font-size: 32px;
 }
 
 @media (max-width: 414px) {

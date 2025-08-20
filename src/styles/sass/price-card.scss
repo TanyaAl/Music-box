@@ -1,0 +1,33 @@
+.price-card {
+    width: 366px;
+    height: 615px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 1rem;
+}
+
+.card-title {
+    margin-top: 24px;
+    margin-bottom: 200px;
+    font-size: 24px;
+}
+
+.card-btn {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    width: 100%;
+}
+
+.currency-card {
+    font-size: 64px;
+    line-height: 1em;
+    // vertical-align: top;
+    display: flex;
+
+}
+
+.price-text-card {
+    font-size: 32px;
+    // vertical-align: top;
+}
