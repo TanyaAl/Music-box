@@ -1,8 +1,8 @@
 header {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     padding: 200px 0;
     grid-column: 1 / -1;
     background-image: url('../../assets/images/banner.png');
@@ -13,10 +13,11 @@ header {
 .top-menu {
     position: absolute;
     top: 25px;
+    max-width: 1200px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -47,12 +48,14 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     gap: 90px;
 }
 
 .main-search {
     background-color: #3C3B3D;
     border: none;
+    margin-left: auto;
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 10px;
@@ -102,4 +105,8 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
+}
+
+.form-title {
+    margin-top: 32px;
 }
