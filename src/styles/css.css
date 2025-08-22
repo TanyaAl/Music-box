@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   line-height: 1.5;
@@ -28,6 +32,16 @@ body {
   padding: 20px 30px;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+.small-text12 {
+  font-size: 12.8px;
+  margin: 0;
+}
+
+.small-text16 {
+  font-size: 16px;
+  margin: 0;
 }
 
 header {
@@ -227,16 +241,25 @@ h2 {
   background: transparent;
   color: #fff;
   width: 100%;
+  margin-bottom: 64px;
 }
 
 .currency-card {
   font-size: 64px;
   line-height: 1em;
-  display: flex;
+  vertical-align: baseline;
+  margin-bottom: 40px;
 }
 
 .price-text-card {
   font-size: 32px;
+  margin: 0;
+  vertical-align: top;
+}
+
+.disclaimer {
+  margin-top: 40px;
+  max-width: 1200px;
 }
 
 @media (max-width: 414px) {
@@ -256,6 +279,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
+    width: 100%;
   }
   header {
     position: relative;
@@ -282,6 +306,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: calc(100% - 40px);
   }
   .list-menu {
     display: flex;
@@ -302,6 +327,17 @@ h2 {
   }
   .form-title {
     margin-top: 16px;
+  }
+  .page-pricing {
+    padding: 100px 20px 0 20px;
+    align-items: center;
+    width: 100%;
+  }
+  .container-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
   }
 }
 

@@ -17,6 +17,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
+    width: 100%;
   }
 
   header {
@@ -48,6 +49,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: calc(100% - 40px);
   }
 
   .list-menu {
@@ -72,6 +74,20 @@
 
   .form-title {
     margin-top: 16px;
+  }
+
+
+  .page-pricing {
+    padding: 100px 20px 0 20px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .container-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
   }
 
 

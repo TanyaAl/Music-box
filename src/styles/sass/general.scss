@@ -11,6 +11,10 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   line-height: 1.5;
@@ -31,4 +35,14 @@ body {
   padding: 20px 30px;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+.small-text12 {
+  font-size: 12.8px;
+  margin: 0;
+}
+
+.small-text16 {
+  font-size: 16px;
+  margin: 0;
 }
