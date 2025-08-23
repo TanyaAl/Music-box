@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 @font-face {
   font-family: Roboto, sans-serif;
   src: url('../../assets/fonts/Roboto-Bold.ttf') format('truetype'),
@@ -18,8 +20,8 @@ body {
 body {
   font-family: Roboto, sans-serif;
   line-height: 1.5;
-  color: #cacaca;
-  background-color: #08020d;
+  color: $light;
+  background-color: $background;
 }
 
 .text-up {
@@ -31,12 +33,6 @@ body {
   text-align: center;
 }
 
-.btn {
-  padding: 20px 30px;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
 .small-text12 {
   font-size: 12.8px;
   margin: 0;
@@ -45,4 +41,16 @@ body {
 .small-text16 {
   font-size: 16px;
   margin: 0;
+}
+
+.btn {
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.trasnparent-btn {
+  border: 1px solid $white;
+  background: transparent;
+  color: $white;
 }

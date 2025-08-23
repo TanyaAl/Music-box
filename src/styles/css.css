@@ -28,12 +28,6 @@ body {
   text-align: center;
 }
 
-.btn {
-  padding: 20px 30px;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
 .small-text12 {
   font-size: 12.8px;
   margin: 0;
@@ -42,6 +36,18 @@ body {
 .small-text16 {
   font-size: 16px;
   margin: 0;
+}
+
+.btn {
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.trasnparent-btn {
+  border: 1px solid #cacaca;
+  background: transparent;
+  color: #cacaca;
 }
 
 header {
@@ -55,8 +61,7 @@ header {
   background-position: center;
   background-size: cover;
 }
-
-.top-menu {
+header .top-menu {
   position: absolute;
   top: 25px;
   max-width: 1200px;
@@ -65,21 +70,25 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
-
-.logo {
+header .top-menu .logo {
   display: flex;
   flex-direction: row;
   font-size: 11px;
   align-items: center;
   gap: 16px;
 }
-
-.logo img {
+header .top-menu .logo img {
   width: 24px;
   height: 24px;
 }
-
-.list-menu {
+header .top-menu .left-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 90px;
+}
+header .top-menu .left-menu .list-menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -89,16 +98,7 @@ header {
   list-style: none;
   padding: 0;
 }
-
-.left-menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 90px;
-}
-
-.main-search {
+header .top-menu .main-search {
   background-color: #3C3B3D;
   border: none;
   margin-left: auto;
@@ -110,9 +110,8 @@ header {
   box-sizing: border-box;
 }
 
-.subscribe-input::placeholder {
-  color: #fff;
-  opacity: 1;
+.form-title {
+  margin-top: 32px;
 }
 
 .subscribe-form {
@@ -120,19 +119,16 @@ header {
   flex-direction: column;
   max-width: 570px;
 }
-
-.subscribe-btn {
-  border: none;
-  background-color: #34C176;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  font-size: 13px;
+.subscribe-form .form-inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
-
-.subscribe-input {
+.subscribe-form .form-inputs .subscribe-input {
   box-sizing: border-box;
   min-height: 50px;
-  margin-bottom: 1.5rem;
   min-width: 270px;
   padding-left: 20px;
   border: 2px solid #cacaca;
@@ -140,18 +136,19 @@ header {
   box-sizing: border-box;
   background: transparent;
   font-weight: 700;
-  color: #fff;
+  color: #cacaca;
 }
-
-.form-inputs {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 24px;
+.subscribe-form .form-inputs .subscribe-input::placeholder {
+  color: #cacaca;
+  opacity: 1;
 }
-
-.form-title {
-  margin-top: 32px;
+.subscribe-form .subscribe-btn {
+  border: none;
+  margin-top: 1.5rem;
+  background-color: #34C176;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cacaca;
+  font-size: 13px;
 }
 
 .main-grid {
@@ -166,7 +163,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: #cacaca;
   margin: 0;
 }
 
@@ -176,50 +173,90 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: #cacaca;
   margin: 0;
 }
 
-.page-pricing {
+h3 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  color: #cacaca;
+  margin: 0;
+}
+
+.page-app {
   padding-top: 100px;
-  width: 100%;
+  padding-bottom: 100px;
   grid-column: 1/-1;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
-.container-pricing {
+.page-app .app-info {
+  max-width: 1200px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.page-app .app-info .text-app,
+.page-app .app-info .img-app {
+  flex: 1;
+}
+.page-app .app-info .text-app {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.page-app .app-info .download-btn {
+  font-size: 12.8px;
+  border-radius: 32px;
+  background-color: #95390C;
+  color: #cacaca;
+  padding: 16px 40px;
+  margin-top: 16px;
+}
+
+.page-pricing {
+  padding-top: 100px;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.page-pricing .container-pricing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
   max-width: 1200px;
   width: 100%;
   gap: 50px;
 }
-
-.free {
+.page-pricing .container-pricing .free {
   background-image: url("../../assets/images/subscribe_1.png");
   background-size: cover;
   background-position: center;
 }
-
-.standard {
+.page-pricing .container-pricing .standard {
   background-image: url("../../assets/images/subscribe_2.png");
   background-size: cover;
   background-position: center;
 }
-
-.premium {
+.page-pricing .container-pricing .premium {
   background-image: url("../../assets/images/subscribe_3.png");
   background-size: cover;
   background-position: center;
 }
-
-.disclaimer {
+.page-pricing .disclaimer {
   max-width: 1200px;
+  margin-top: 40px;
 }
 
 .price-card {
@@ -229,37 +266,80 @@ h2 {
   padding-right: 1.5rem;
   border-radius: 1rem;
 }
-
-.card-title {
+.price-card .card-title {
   margin-top: 24px;
   margin-bottom: 200px;
   font-size: 24px;
 }
-
-.card-btn {
-  border: 1px solid #fff;
-  background: transparent;
-  color: #fff;
+.price-card .card-btn {
   width: 100%;
   margin-bottom: 64px;
 }
-
-.currency-card {
+.price-card .currency-card {
   font-size: 64px;
   line-height: 1em;
-  vertical-align: baseline;
   margin-bottom: 40px;
+  position: relative;
 }
-
-.price-text-card {
+.price-card .price-text-card {
   font-size: 32px;
   margin: 0;
-  vertical-align: top;
+  position: absolute;
+  top: -8px;
+}
+.price-card .price-number-card {
+  margin-right: 16px;
 }
 
-.disclaimer {
-  margin-top: 40px;
+.page-news {
+  padding-top: 100px;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.page-news .news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  margin-top: 50px;
+  width: 100%;
   max-width: 1200px;
+}
+.page-news .news-container .news-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.page-news .news-container .news-block .news-img {
+  max-width: 100%;
+  overflow: hidden;
+}
+.page-news .news-container .news-block .news-img > img {
+  max-width: 100%;
+}
+.page-news .news-container .news-block .news-title {
+  margin-bottom: 30px;
+}
+.page-news .news-container .news-block .body-news {
+  text-align: left;
+}
+.page-news .news-container .news-block .body-news .news-author {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.page-news .news-container .news-block .body-news .news-author .mini-logo {
+  color: #F89202;
+}
+.page-news .news-container .news-block .body-news .news-btn {
+  padding: 16px 30px;
 }
 
 @media (max-width: 414px) {
@@ -289,18 +369,7 @@ h2 {
     display: flex;
     justify-content: center;
   }
-  .form-inputs {
-    display: flex;
-    justify-content: center;
-  }
-  .subscribe-input {
-    width: 100%;
-    margin-bottom: 0;
-  }
-  .subscribe-btn {
-    margin-top: 1.5rem;
-  }
-  .top-menu {
+  header .top-menu {
     position: absolute;
     left: 20px;
     display: flex;
@@ -308,36 +377,62 @@ h2 {
     align-items: flex-start;
     width: calc(100% - 40px);
   }
-  .list-menu {
+  header .top-menu .left-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+  header .top-menu .left-menu .list-menu {
     display: flex;
     flex-direction: column;
     gap: 0;
     margin-top: 16px;
     margin-bottom: 16px;
   }
-  .left-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    align-items: flex-start;
-  }
-  .main-search {
+  header .top-menu .main-search {
     width: calc(100% - 40px);
     margin: 0;
   }
-  .form-title {
-    margin-top: 16px;
+  header .form-inputs {
+    display: flex;
+    justify-content: center;
+  }
+  header .form-inputs .subscribe-input {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  header .subscribe-btn {
+    margin-top: 1.5rem;
   }
   .page-pricing {
     padding: 100px 20px 0 20px;
     align-items: center;
     width: 100%;
   }
-  .container-pricing {
+  .page-pricing .form-title {
+    margin-top: 16px;
+  }
+  .page-pricing .container-pricing {
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
+  }
+  .page-news {
+    padding: 100px 20px 0 20px;
+    align-items: center;
+    width: 100%;
+  }
+  .page-news .news-img {
+    flex: 1 1 500px;
+    max-width: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-news .news-img > img {
+    max-width: 100%;
   }
 }
 

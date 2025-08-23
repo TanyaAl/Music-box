@@ -27,68 +27,85 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-  }
 
-  .form-inputs {
-    display: flex;
-    justify-content: center;
-  }
+    .top-menu {
+      position: absolute;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: calc(100% - 40px);
 
-  .subscribe-input {
-    width: 100%;
-    margin-bottom: 0;
-  }
+      .left-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
 
-  .subscribe-btn {
-    margin-top: 1.5rem;
-  }
+        .list-menu {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+          margin-top: 16px;
+          margin-bottom: 16px;
+        }
 
-  .top-menu {
-    position: absolute;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: calc(100% - 40px);
-  }
+      }
 
-  .list-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
+      .main-search {
+        width: calc(100% - 40px);
+        margin: 0;
+      }
+    }
 
-  .left-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    align-items: flex-start;
-  }
+    .form-inputs {
+      display: flex;
+      justify-content: center;
 
-  .main-search {
-    width: calc(100% - 40px);
-    margin: 0;
-  }
+      .subscribe-input {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
 
-  .form-title {
-    margin-top: 16px;
+    .subscribe-btn {
+      margin-top: 1.5rem;
+    }
   }
-
 
   .page-pricing {
     padding: 100px 20px 0 20px;
     align-items: center;
     width: 100%;
+
+    .form-title {
+      margin-top: 16px;
+    }
+
+    .container-pricing {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+    }
   }
 
-  .container-pricing {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  .page-news {
+    padding: 100px 20px 0 20px;
     align-items: center;
-  }
+    width: 100%;
 
+    .news-img {
+      flex: 1 1 500px;
+      max-width: calc(100% - 40px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      >img {
+        max-width: 100%;
+      }
+    }
+  }
 
 }

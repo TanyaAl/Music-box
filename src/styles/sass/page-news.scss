@@ -1,0 +1,62 @@
+@use 'variables' as *;
+
+.page-news {
+    padding-top: 100px;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .news-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+        margin-top: 50px;
+        width: 100%;
+        max-width: 1200px;
+
+        .news-block {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px;
+
+            .news-img {
+                max-width: 100%;
+                overflow: hidden;
+
+                >img {
+                    max-width: 100%;
+                }
+            }
+
+            .news-title {
+                margin-bottom: 30px;
+            }
+
+            .body-news {
+                text-align: left;
+
+                .news-author {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+                    align-items: center;
+                    margin-top: 24px;
+                    margin-bottom: 48px;
+
+                    .mini-logo {
+                        color: $orange;
+                    }
+                }
+
+                .news-btn {
+                    padding: 16px 30px;
+                }
+            }
+
+        }
+    }
+}

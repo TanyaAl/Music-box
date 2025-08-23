@@ -1,41 +1,43 @@
 .page-pricing {
     padding-top: 100px;
-    width: 100%;
+    // width: 100%;
     grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
 
-.container-pricing {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
-    max-width: 1200px;
-    width: 100%;
-    gap: 50px;
-}
+    .container-pricing {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+        max-width: 1200px;
+        width: 100%;
+        gap: 50px;
 
-.free {
-    background-image: url('../../assets/images/subscribe_1.png');
-    background-size: cover;
-    background-position: center;
-}
+        .free {
+            background-image: url('../../assets/images/subscribe_1.png');
+            background-size: cover;
+            background-position: center;
+        }
 
-.standard {
-    background-image: url('../../assets/images/subscribe_2.png');
-    background-size: cover;
-    background-position: center;
-}
+        .standard {
+            background-image: url('../../assets/images/subscribe_2.png');
+            background-size: cover;
+            background-position: center;
+        }
 
-.premium {
-    background-image: url('../../assets/images/subscribe_3.png');
-    background-size: cover;
-    background-position: center;
-}
+        .premium {
+            background-image: url('../../assets/images/subscribe_3.png');
+            background-size: cover;
+            background-position: center;
+        }
+    }
 
-.disclaimer {
-    max-width: 1200px;
+    .disclaimer {
+        max-width: 1200px;
+        margin-top: 40px;
+    }
 }

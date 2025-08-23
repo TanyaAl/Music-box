@@ -1,39 +1,38 @@
+@use 'variables' as *;
+
 .price-card {
     width: 366px;
     height: 615px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     border-radius: 1rem;
-}
 
-.card-title {
-    margin-top: 24px;
-    margin-bottom: 200px;
-    font-size: 24px;
-}
+    .card-title {
+        margin-top: 24px;
+        margin-bottom: 200px;
+        font-size: 24px;
+    }
 
-.card-btn {
-    border: 1px solid #fff;
-    background: transparent;
-    color: #fff;
-    width: 100%;
-    margin-bottom: 64px;
-}
+    .card-btn {
+        width: 100%;
+        margin-bottom: 64px;
+    }
 
-.currency-card {
-    font-size: 64px;
-    line-height: 1em;
-    vertical-align: baseline;
-    margin-bottom: 40px;
-}
+    .currency-card {
+        font-size: 64px;
+        line-height: 1em;
+        margin-bottom: 40px;
+        position: relative;
+    }
 
-.price-text-card {
-    font-size: 32px;
-    margin: 0;
-    vertical-align: top;
-}
+    .price-text-card {
+        font-size: 32px;
+        margin: 0;
+        position: absolute;
+        top: -8px;
+    }
 
-.disclaimer {
-    margin-top: 40px;
-    max-width: 1200px;
+    .price-number-card {
+        margin-right: 16px;
+    }
 }
