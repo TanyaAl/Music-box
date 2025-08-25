@@ -108,4 +108,30 @@
     }
   }
 
+  .page-app {
+    padding: 100px 20px 0 20px;
+    align-items: center;
+    width: 100%;
+
+    .app-info {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  footer {
+    .footer {
+      padding: 3rem 20px 2rem 20px;
+
+      .footer-columns {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-row {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 }
