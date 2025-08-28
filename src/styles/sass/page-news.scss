@@ -14,8 +14,6 @@
         align-items: center;
         gap: 64px;
         margin-top: 50px;
-        width: 100%;
-        max-width: 1200px;
 
         .news-block {
             display: flex;
@@ -26,18 +24,21 @@
             .news-img {
                 max-width: 100%;
                 overflow: hidden;
+                flex: 1;
 
                 >img {
                     max-width: 100%;
                 }
             }
 
-            .news-title {
-                margin-bottom: 30px;
-            }
 
             .body-news {
                 text-align: left;
+                flex: 1;
+
+                .news-title {
+                    margin-bottom: 30px;
+                }
 
                 .news-author {
                     display: flex;
