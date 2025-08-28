@@ -35,6 +35,7 @@
       flex-direction: column;
       align-items: flex-start;
       width: calc(100% - 40px);
+      margin: 0;
 
       .left-menu {
         display: flex;
@@ -101,8 +102,6 @@
         flex-direction: column;
 
         .news-img {
-          // flex: 1 1 500px;
-          // max-width: calc(100% - 40px);
           display: flex;
           justify-content: center;
           align-items: center;

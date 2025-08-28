@@ -4,11 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music-page</title>
+    <link rel="stylesheet" href="./styles/css.css">
+    <title>Artist-page</title>
 </head>
 
 <body>
-
+    <main class="main-grid">
+        <header id="page-description" class="artist-page">
+            <nav class="top-menu page-p-20">
+                <div class="left-menu">
+                    <div class="logo">
+                        <img alt="logo" src="./assets/images/logo.svg">
+                        <p class="text-up text-logo">Music box</p>
+                    </div>
+                    <ul class="list-menu text-up">
+                        <li>главная</li>
+                        <li>каталог</li>
+                        <li>исполнители</li>
+                        <li>контакты</li>
+                    </ul>
+                </div>
+                <input class="main-search text-up" type="text" placeholder="Поиск...">
+            </nav>
+            <div class="artist-info">
+                <h1 class="text-up artist-page-title">morten harket</h1>
+                <p class="small-text-16">24 875 поклонников</p>
+                <div class="buttons">
+                    <button class="btn small-text-12 text-up btn-mix artist-btn">
+                        <img alt="icon-mix" src="./assets/images/play-button.svg">
+                        <span>микс</span></button>
+                    <button class="btn small-text-12 text-up btn-save artist-btn">
+                        <img alt="icon-save" src="./assets/images/heart.svg">
+                        <span>в избранное</span></button>
+                </div>
+            </div>
+        </header>
+        <section id="page-popular-track" class="page-popular-track page-p-20 pad-top-100">
+            <h2 class="text-up">популярные треки</h2>
+            <div class="track-list">
+                <div class="left-column">
+                    <div class="popular-track">
+                        <img alt="spanish-step" src="./assets/images/Wild Seed.png">
+                        <p><span class="text-up small-text-12 bold">spanish step</span><br>Morten Harket</p>
+                        <p class="small-text-12">4:07</p>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="popular-track">
+                        <img alt="spanish-step" src="./assets/images/Wild Seed.png">
+                        <p><span class="text-up small-text-12 bold">spanish step</span><br>Morten Harket</p>
+                        <p class="small-text-12">4:07</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

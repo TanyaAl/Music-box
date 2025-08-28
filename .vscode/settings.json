@@ -1,3 +1,4 @@
 {
-    "editor.cursorBlinking": "solid"
+    "editor.cursorBlinking": "solid",
+    "liveServer.settings.file": "/artist.html"
 }

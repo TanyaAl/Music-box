@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+.artist-page {
+    background-image: url('../../assets/images/Morten\ Harket.png');
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    justify-items: center;
+
+
+    .artist-info {
+        grid-column: 2 / span 5;
+
+        .artist-page-title {
+            text-align: left;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1.5rem;
+
+            .btn-mix {
+                background-color: $lilac;
+            }
+
+            .btn-save {
+                background-color: $darkOrange;
+            }
+
+            .artist-btn {
+                color: $white;
+                width: 200px;
+                display: flex;
+                flex-direction: row;
+                gap: 16px;
+                align-items: center;
+
+                >img {
+                    width: 20px;
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}

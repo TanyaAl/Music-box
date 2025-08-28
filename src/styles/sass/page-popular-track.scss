@@ -1,0 +1,13 @@
+.track-list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    .left-column {
+        flex: 1;
+    }
+
+    .right-column {
+        flex: 1;
+    }
+}

@@ -40,6 +40,7 @@ body {
 
 .btn {
   padding: 20px 30px;
+  border: none;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -55,6 +56,14 @@ body {
   margin-left: 20px;
   width: 100%;
   max-width: 1200px;
+}
+
+.pad-top-100 {
+  padding-top: 100px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 header {
@@ -191,7 +200,6 @@ h3 {
 }
 
 .page-app {
-  padding-top: 100px;
   padding-bottom: 100px;
   grid-column: 1/-1;
   display: flex;
@@ -284,7 +292,6 @@ footer .line {
 }
 
 .page-pricing {
-  padding-top: 100px;
   grid-column: 1/-1;
   display: flex;
   flex-direction: column;
@@ -352,7 +359,6 @@ footer .line {
 }
 
 .page-news {
-  padding-top: 100px;
   grid-column: 1/-1;
   display: flex;
   flex-direction: column;
@@ -402,6 +408,79 @@ footer .line {
   padding: 16px 30px;
 }
 
+.artist-page {
+  background-image: url("../../assets/images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 10px;
+  justify-items: center;
+}
+.artist-page .artist-info {
+  grid-column: 2/span 5;
+}
+.artist-page .artist-info .artist-page-title {
+  text-align: left;
+}
+.artist-page .artist-info .buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+.artist-page .artist-info .buttons .btn-mix {
+  background-color: #5328A1;
+}
+.artist-page .artist-info .buttons .btn-save {
+  background-color: #95390C;
+}
+.artist-page .artist-info .buttons .artist-btn {
+  color: #cacaca;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+.artist-page .artist-info .buttons .artist-btn > img {
+  width: 20px;
+  filter: invert(1);
+}
+
+.track-list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  max-width: 1200px;
+  width: 100%;
+}
+.track-list .left-column {
+  flex: 1;
+  width: 50%;
+}
+.track-list .right-column {
+  flex: 1;
+  width: 50%;
+  margin-right: auto;
+}
+
+.page-popular-track h2 {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.popular-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.popular-track > img {
+  width: 55px;
+  height: 55px;
+  margin-right: 16px;
+}
+
 @media (max-width: 414px) {
   h1 {
     font-size: 30px;
@@ -436,6 +515,7 @@ footer .line {
     flex-direction: column;
     align-items: flex-start;
     width: calc(100% - 40px);
+    margin: 0;
   }
   header .top-menu .left-menu {
     display: flex;
