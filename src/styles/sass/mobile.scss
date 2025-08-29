@@ -140,4 +140,69 @@
       }
     }
   }
+
+  .artist-page {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+
+    .top-menu {
+      left: 0;
+      right: 0;
+    }
+
+    .artist-info {
+      margin-left: 0px;
+      width: 100%;
+
+      h1 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .buttons {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .page-popular-track {
+    height: 100vh;
+    align-items: flex-start;
+
+    .track-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  .page-discography {
+    .album {
+      img {
+        height: 137px;
+        width: 137px;
+      }
+    }
+  }
+
+  .page-similar {
+    .singer {
+      img {
+        height: 137px;
+        width: 137px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .col {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 }

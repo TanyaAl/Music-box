@@ -6,14 +6,20 @@
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 10px;
-    justify-items: center;
+    // display: grid;
+    // grid-template-columns: repeat(12, 1fr);
+    // column-gap: 10px;
+    // justify-items: center;
 
 
     .artist-info {
-        grid-column: 2 / span 5;
+        // grid-column: 2 / span 5;
+        // margin-left: 20px;
+
+        p {
+            margin-bottom: 50px;
+            margin-top: 0;
+        }
 
         .artist-page-title {
             text-align: left;

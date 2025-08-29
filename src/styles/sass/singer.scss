@@ -1,0 +1,21 @@
+.singer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    img {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    h4 {
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}

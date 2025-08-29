@@ -1,0 +1,19 @@
+.page-similar {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 100px;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    .similar-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 25px 50px;
+    }
+}

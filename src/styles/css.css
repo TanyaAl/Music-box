@@ -52,8 +52,9 @@ body {
 }
 
 .page-p-20 {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 100%;
   max-width: 1200px;
 }
@@ -197,6 +198,12 @@ h3 {
   font-weight: 400;
   color: #cacaca;
   margin: 0;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
 }
 
 .page-app {
@@ -414,13 +421,10 @@ footer .line {
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 10px;
-  justify-items: center;
 }
-.artist-page .artist-info {
-  grid-column: 2/span 5;
+.artist-page .artist-info p {
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 .artist-page .artist-info .artist-page-title {
   text-align: left;
@@ -448,37 +452,122 @@ footer .line {
   filter: invert(1);
 }
 
-.track-list {
+.page-popular-track {
+  grid-column: 1/-1;
   display: flex;
-  flex-direction: row;
-  gap: 25px;
-  max-width: 1200px;
-  width: 100%;
+  flex-direction: column;
 }
-.track-list .left-column {
-  flex: 1;
-  width: 50%;
-}
-.track-list .right-column {
-  flex: 1;
-  width: 50%;
-  margin-right: auto;
-}
-
 .page-popular-track h2 {
   text-align: left;
   margin-bottom: 50px;
+}
+.page-popular-track .track-list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  width: 100%;
+}
+.page-popular-track .track-list .left-column {
+  flex: 1;
+}
+.page-popular-track .track-list .right-column {
+  flex: 1;
+}
+.page-popular-track .track-list .tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.page-popular-track .track-list .tracks p {
+  margin: 0;
+  text-align: left;
 }
 
 .popular-track {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
-.popular-track > img {
+.popular-track img {
   width: 55px;
   height: 55px;
-  margin-right: 16px;
+}
+.popular-track .title-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.page-discography {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.page-discography h2 {
+  margin-bottom: 50px;
+}
+.page-discography .discography-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 25px 50px;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+}
+.album img {
+  height: 250px;
+  width: 250px;
+}
+.album h4 {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.album p {
+  margin: 0;
+}
+
+.page-similar {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 100px;
+}
+.page-similar h2 {
+  margin-bottom: 50px;
+}
+.page-similar .similar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 25px 50px;
+}
+
+.singer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.singer img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.singer h4 {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.singer p {
+  margin: 0;
 }
 
 @media (max-width: 414px) {
@@ -593,6 +682,52 @@ footer .line {
     flex-direction: column;
   }
   footer .footer .footer-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .artist-page {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+  .artist-page .top-menu {
+    left: 0;
+    right: 0;
+  }
+  .artist-page .artist-info {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .artist-page .artist-info h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .artist-page .artist-info .buttons {
+    flex-wrap: wrap;
+  }
+  .page-popular-track {
+    height: 100vh;
+    align-items: flex-start;
+  }
+  .page-popular-track .track-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .page-discography .album img {
+    height: 137px;
+    width: 137px;
+  }
+  .page-similar .singer img {
+    height: 137px;
+    width: 137px;
+  }
+  .page-similar .singer p {
+    font-size: 16px;
+  }
+  .page-similar .singer .col {
     display: flex;
     flex-direction: column;
   }
