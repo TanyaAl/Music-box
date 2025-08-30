@@ -179,7 +179,6 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   color: #cacaca;
-  margin: 0;
 }
 
 h2 {
@@ -201,6 +200,7 @@ h3 {
 }
 
 h4 {
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   line-height: 27px;
   font-weight: bold;
@@ -718,7 +718,7 @@ footer .line {
     gap: 25px;
   }
   .page-discography .album {
-    width: 137px;
+    width: 145px;
   }
   .page-discography .album img {
     height: 137px;
