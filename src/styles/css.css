@@ -1,0 +1,736 @@
+@font-face {
+  font-family: Roboto, sans-serif;
+  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype"), url("../../assets/fonts/Roboto-Medium.ttf") format("truetype"), url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: #cacaca;
+  background-color: #08020d;
+}
+
+.text-up {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title-text {
+  text-align: center;
+}
+
+.small-text12 {
+  font-size: 12.8px;
+  margin: 0;
+}
+
+.small-text16 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.btn {
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.trasnparent-btn {
+  border: 1px solid #cacaca;
+  background: transparent;
+  color: #cacaca;
+}
+
+.page-p-20 {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.pad-top-100 {
+  padding-top: 100px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0;
+  grid-column: 1/-1;
+  background-image: url("../../assets/images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+header .top-menu {
+  position: absolute;
+  top: 25px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .top-menu .logo {
+  display: flex;
+  flex-direction: row;
+  font-size: 11px;
+  align-items: center;
+  gap: 16px;
+}
+header .top-menu .logo img {
+  width: 24px;
+  height: 24px;
+}
+header .top-menu .left-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 90px;
+}
+header .top-menu .left-menu .list-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 11px;
+  gap: 24px;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+}
+header .top-menu .main-search {
+  background-color: #3C3B3D;
+  border: none;
+  margin-left: auto;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+  height: 25px;
+  width: 248px;
+  box-sizing: border-box;
+}
+
+.form-title {
+  margin-top: 32px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+}
+.subscribe-form .form-inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.subscribe-form .form-inputs .subscribe-input {
+  box-sizing: border-box;
+  min-height: 50px;
+  min-width: 270px;
+  padding-left: 20px;
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background: transparent;
+  font-weight: 700;
+  color: #cacaca;
+}
+.subscribe-form .form-inputs .subscribe-input::placeholder {
+  color: #cacaca;
+  opacity: 1;
+}
+.subscribe-form .subscribe-btn {
+  border: none;
+  margin-top: 1.5rem;
+  background-color: #34C176;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cacaca;
+  font-size: 13px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 10px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #cacaca;
+  margin: 0;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #cacaca;
+  margin: 0;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  color: #cacaca;
+  margin: 0;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+}
+
+.page-app {
+  padding-bottom: 100px;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.page-app .app-info {
+  max-width: 1200px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.page-app .app-info .text-app,
+.page-app .app-info .img-app {
+  flex: 1;
+}
+.page-app .app-info .text-app {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.page-app .app-info .download-btn {
+  font-size: 12.8px;
+  border-radius: 32px;
+  background-color: #95390C;
+  color: #cacaca;
+  padding: 16px 40px;
+  margin-top: 16px;
+}
+
+footer {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  overflow: hidden;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer .footer-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 0 3rem 0;
+}
+footer .footer .footer-columns .footer-title {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+}
+footer .footer .footer-columns .footer-icons {
+  margin-top: 16px;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 16px;
+}
+footer .footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer ul a {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #cacaca;
+}
+footer .footer-bottom {
+  padding: 2rem 0 2rem 0;
+}
+footer .footer-bottom .footer-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+footer .line {
+  height: 1px;
+  background-color: #cacaca;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-pricing {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.page-pricing .container-pricing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 50px;
+}
+.page-pricing .container-pricing .free {
+  background-image: url("../../assets/images/subscribe_1.png");
+  background-size: cover;
+  background-position: center;
+}
+.page-pricing .container-pricing .standard {
+  background-image: url("../../assets/images/subscribe_2.png");
+  background-size: cover;
+  background-position: center;
+}
+.page-pricing .container-pricing .premium {
+  background-image: url("../../assets/images/subscribe_3.png");
+  background-size: cover;
+  background-position: center;
+}
+.page-pricing .disclaimer {
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+.price-card {
+  width: 366px;
+  height: 615px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 1rem;
+}
+.price-card .card-title {
+  margin-top: 24px;
+  margin-bottom: 200px;
+  font-size: 24px;
+}
+.price-card .card-btn {
+  width: 100%;
+  margin-bottom: 64px;
+}
+.price-card .currency-card {
+  font-size: 64px;
+  line-height: 1em;
+  margin-bottom: 40px;
+  position: relative;
+}
+.price-card .price-text-card {
+  font-size: 32px;
+  margin: 0;
+  position: absolute;
+  top: -8px;
+}
+.price-card .price-number-card {
+  margin-right: 16px;
+}
+
+.page-news {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.page-news .news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  margin-top: 50px;
+}
+.page-news .news-container .news-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.page-news .news-container .news-block .news-img {
+  max-width: 100%;
+  overflow: hidden;
+  flex: 1;
+}
+.page-news .news-container .news-block .news-img > img {
+  max-width: 100%;
+}
+.page-news .news-container .news-block .body-news {
+  text-align: left;
+  flex: 1;
+}
+.page-news .news-container .news-block .body-news .news-title {
+  margin-bottom: 30px;
+}
+.page-news .news-container .news-block .body-news .news-author {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.page-news .news-container .news-block .body-news .news-author .mini-logo {
+  color: #F89202;
+}
+.page-news .news-container .news-block .body-news .news-btn {
+  padding: 16px 30px;
+}
+
+.artist-page {
+  background-image: url("../../assets/images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.artist-page .artist-info p {
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+.artist-page .artist-info .artist-page-title {
+  text-align: left;
+}
+.artist-page .artist-info .buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+.artist-page .artist-info .buttons .btn-mix {
+  background-color: #5328A1;
+}
+.artist-page .artist-info .buttons .btn-save {
+  background-color: #95390C;
+}
+.artist-page .artist-info .buttons .artist-btn {
+  color: #cacaca;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+.artist-page .artist-info .buttons .artist-btn > img {
+  width: 20px;
+  filter: invert(1);
+}
+
+.page-popular-track {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+}
+.page-popular-track h2 {
+  text-align: left;
+  margin-bottom: 50px;
+}
+.page-popular-track .track-list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  width: 100%;
+}
+.page-popular-track .track-list .left-column {
+  flex: 1;
+}
+.page-popular-track .track-list .right-column {
+  flex: 1;
+}
+.page-popular-track .track-list .tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.page-popular-track .track-list .tracks p {
+  margin: 0;
+  text-align: left;
+}
+
+.popular-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular-track img {
+  width: 55px;
+  height: 55px;
+}
+.popular-track .title-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.page-discography {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.page-discography h2 {
+  margin-bottom: 50px;
+}
+.page-discography .discography-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 25px 50px;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+}
+.album img {
+  height: 250px;
+  width: 250px;
+}
+.album h4 {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.album p {
+  margin: 0;
+}
+
+.page-similar {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 100px;
+}
+.page-similar h2 {
+  margin-bottom: 50px;
+}
+.page-similar .similar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 25px 50px;
+}
+
+.singer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.singer img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.singer h4 {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.singer p {
+  margin: 0;
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    width: 100%;
+  }
+  header {
+    position: relative;
+    padding: 0 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  header .top-menu {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100% - 40px);
+    margin: 0;
+  }
+  header .top-menu .left-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+  header .top-menu .left-menu .list-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  header .top-menu .main-search {
+    width: calc(100% - 40px);
+    margin: 0;
+  }
+  header .form-inputs {
+    display: flex;
+    justify-content: center;
+  }
+  header .form-inputs .subscribe-input {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  header .subscribe-btn {
+    margin-top: 1.5rem;
+  }
+  .page-pricing {
+    padding: 100px 20px 0 20px;
+    align-items: center;
+    width: 100%;
+  }
+  .page-pricing .form-title {
+    margin-top: 16px;
+  }
+  .page-pricing .container-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-content: center;
+  }
+  .page-news {
+    padding: 100px 20px 0 20px;
+    align-items: center;
+    width: 100%;
+  }
+  .page-news .news-container .news-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-news .news-container .news-block .news-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-news .news-container .news-block .news-img > img {
+    max-width: 100%;
+  }
+  .page-app {
+    padding: 100px 20px 100px 20px;
+    align-items: center;
+    width: 100%;
+  }
+  .page-app .app-info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  footer .footer {
+    padding: 3rem 20px 2rem 20px;
+  }
+  footer .footer .footer-columns {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer .footer-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .artist-page {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    padding-left: 0px;
+  }
+  .artist-page .top-menu {
+    left: 0;
+    right: 0;
+  }
+  .artist-page .artist-info {
+    width: 100%;
+  }
+  .artist-page .artist-info h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .artist-page .artist-info .buttons {
+    flex-wrap: wrap;
+  }
+  .page-popular-track {
+    height: 100vh;
+    align-items: flex-start;
+  }
+  .page-popular-track .track-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .page-discography .album img {
+    height: 137px;
+    width: 137px;
+  }
+  .page-similar .singer img {
+    height: 137px;
+    width: 137px;
+  }
+  .page-similar .singer p {
+    font-size: 16px;
+  }
+  .page-similar .singer .col {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=css.css.map */
