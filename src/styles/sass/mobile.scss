@@ -146,6 +146,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
+    padding-left: 0px;
 
     .top-menu {
       left: 0;
@@ -153,7 +154,6 @@
     }
 
     .artist-info {
-      margin-left: 0px;
       width: 100%;
 
       h1 {

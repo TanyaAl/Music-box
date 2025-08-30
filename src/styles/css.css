@@ -690,13 +690,13 @@ footer .line {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
+    padding-left: 0px;
   }
   .artist-page .top-menu {
     left: 0;
     right: 0;
   }
   .artist-page .artist-info {
-    margin-left: 0px;
     width: 100%;
   }
   .artist-page .artist-info h1 {
