@@ -68,7 +68,9 @@ header {
 }
 
 .form-title {
-    margin-top: 32px;
+    h1 {
+        margin-bottom: 0;
+    }
 }
 
 .subscribe-form {

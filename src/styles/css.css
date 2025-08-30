@@ -6,6 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -21,7 +22,6 @@ body {
 
 .text-up {
   text-transform: uppercase;
-  margin: 0;
 }
 
 .title-text {
@@ -125,8 +125,8 @@ header .top-menu .main-search {
   box-sizing: border-box;
 }
 
-.form-title {
-  margin-top: 32px;
+.form-title h1 {
+  margin-bottom: 0;
 }
 
 .subscribe-form {
