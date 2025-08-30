@@ -523,6 +523,7 @@ footer .line {
 .album {
   display: flex;
   flex-direction: column;
+  width: 250px;
 }
 .album img {
   height: 250px;
@@ -715,6 +716,9 @@ footer .line {
     display: flex;
     flex-direction: column;
     gap: 25px;
+  }
+  .page-discography .album {
+    width: 137px;
   }
   .page-discography .album img {
     height: 137px;
