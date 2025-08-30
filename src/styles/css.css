@@ -53,10 +53,10 @@ body {
 
 .page-p-20 {
   margin: 0 auto;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1240px;
 }
 
 .pad-top-100 {
@@ -599,7 +599,6 @@ footer .line {
   }
   header .top-menu {
     position: absolute;
-    left: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -649,7 +648,7 @@ footer .line {
     align-content: center;
   }
   .page-news {
-    padding: 100px 20px 0 20px;
+    padding: 100px 0 0 0;
     align-items: center;
     width: 100%;
   }
@@ -666,7 +665,7 @@ footer .line {
     max-width: 100%;
   }
   .page-app {
-    padding: 100px 20px 100px 20px;
+    padding: 100px 0 100px 0;
     align-items: center;
     width: 100%;
   }
