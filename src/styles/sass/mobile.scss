@@ -88,6 +88,14 @@
       flex-direction: column;
       gap: 50px;
       align-content: center;
+
+      .price-card {
+        h3 {
+          font-size: 16px;
+          // font-weight: bold;
+          line-height: 24px;
+        }
+      }
     }
   }
 
@@ -109,6 +117,10 @@
           >img {
             max-width: 100%;
           }
+        }
+
+        .reverse {
+          flex-direction: column-reverse;
         }
       }
     }

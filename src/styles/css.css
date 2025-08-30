@@ -650,6 +650,10 @@ footer .line {
     gap: 50px;
     align-content: center;
   }
+  .page-pricing .container-pricing .price-card h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
   .page-news {
     padding: 100px 0 0 0;
     align-items: center;
@@ -666,6 +670,9 @@ footer .line {
   }
   .page-news .news-container .news-block .news-img > img {
     max-width: 100%;
+  }
+  .page-news .news-container .news-block .reverse {
+    flex-direction: column-reverse;
   }
   .page-app {
     padding: 100px 0 100px 0;
