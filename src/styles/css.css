@@ -263,6 +263,8 @@ footer .footer .footer-columns .footer-title {
   font-size: 18px;
   line-height: 27px;
   text-align: left;
+  font-weight: bold;
+  color: #cacaca;
 }
 footer .footer .footer-columns .footer-icons {
   margin-top: 16px;
@@ -428,6 +430,7 @@ footer .line {
 }
 .artist-page .artist-info .artist-page-title {
   text-align: left;
+  margin-bottom: 16px;
 }
 .artist-page .artist-info .buttons {
   display: flex;
@@ -711,7 +714,7 @@ footer .line {
   .page-popular-track .track-list {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 25px;
   }
   .page-discography .album img {
     height: 137px;
