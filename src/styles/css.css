@@ -1,23 +1,33 @@
 @font-face {
-  font-family: Roboto, sans-serif;
-  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype"), url("../../assets/fonts/Roboto-Medium.ttf") format("truetype"), url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: #cacaca;
+  background-color: #08020d;
 }
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  line-height: 1.5;
-  color: #cacaca;
-  background-color: #08020d;
 }
 
 .text-up {
@@ -26,6 +36,9 @@ body {
 
 .title-text {
   text-align: center;
+}
+.title-text h1 {
+  margin-bottom: 0;
 }
 
 .small-text12 {
@@ -188,7 +201,6 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   color: #cacaca;
-  margin: 0;
 }
 
 h3 {
@@ -196,7 +208,6 @@ h3 {
   line-height: 45px;
   font-weight: 400;
   color: #cacaca;
-  margin: 0;
 }
 
 h4 {
@@ -421,12 +432,8 @@ footer .line {
   background-image: url("../../assets/images/Morten Harket.png");
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-.artist-page .artist-info p {
-  margin-bottom: 50px;
-  margin-top: 0;
+  padding-top: 215px;
+  padding-bottom: 220px;
 }
 .artist-page .artist-info .artist-page-title {
   text-align: left;
@@ -435,6 +442,7 @@ footer .line {
 .artist-page .artist-info .buttons {
   display: flex;
   gap: 1.5rem;
+  margin-top: 50px;
 }
 .artist-page .artist-info .buttons .btn-mix {
   background-color: #5328A1;
@@ -671,7 +679,7 @@ footer .line {
   .page-news .news-container .news-block .news-img > img {
     max-width: 100%;
   }
-  .page-news .news-container .news-block .reverse {
+  .page-news .news-container .reverse {
     flex-direction: column-reverse;
   }
   .page-app {
@@ -699,11 +707,16 @@ footer .line {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
+  }
+  .artist-page .artist-title {
     padding-left: 0px;
   }
   .artist-page .top-menu {
     left: 0;
     right: 0;
+  }
+  .artist-page .top-menu .main-search {
+    width: 100%;
   }
   .artist-page .artist-info {
     width: 100%;

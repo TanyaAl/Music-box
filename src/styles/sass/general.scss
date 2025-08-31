@@ -1,10 +1,24 @@
 @use 'variables' as *;
 
 @font-face {
-  font-family: Roboto, sans-serif;
-  src: url('../../assets/fonts/Roboto-Bold.ttf') format('truetype'),
-    url('../../assets/fonts/Roboto-Medium.ttf') format('truetype'),
-    url('../../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-family: 'Roboto';
+  src: url('../../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../assets/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 html,
@@ -12,26 +26,29 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: $light;
+  background-color: $background;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: Roboto, sans-serif;
-  line-height: 1.5;
-  color: $light;
-  background-color: $background;
-}
+// body {
+//   font-family: Roboto, sans-serif;
+// }
 
 .text-up {
   text-transform: uppercase;
-  // margin: 0;
 }
 
 .title-text {
   text-align: center;
+
+  h1 {
+    margin-bottom: 0;
+  }
 }
 
 .small-text12 {

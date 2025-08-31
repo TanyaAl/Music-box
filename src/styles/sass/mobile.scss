@@ -119,9 +119,10 @@
           }
         }
 
-        .reverse {
-          flex-direction: column-reverse;
-        }
+      }
+
+      .reverse {
+        flex-direction: column-reverse;
       }
     }
   }
@@ -158,11 +159,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
-    padding-left: 0px;
+
+    .artist-title {
+      padding-left: 0px;
+    }
 
     .top-menu {
       left: 0;
       right: 0;
+
+      .main-search {
+        width: 100%;
+      }
     }
 
     .artist-info {
