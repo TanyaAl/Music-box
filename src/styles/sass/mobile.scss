@@ -105,9 +105,15 @@
     width: 100%;
 
     .news-container {
+      .news-title {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
       .news-block {
         display: flex;
         flex-direction: column;
+
 
         .news-img {
           display: flex;
@@ -136,6 +142,7 @@
     .app-info {
       display: flex;
       flex-direction: column-reverse;
+      align-items: center;
     }
   }
 
