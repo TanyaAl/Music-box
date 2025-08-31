@@ -65,52 +65,57 @@ header {
 
     }
 
-}
+    .title-text {
+        text-align: center;
 
-.form-title {
-    h1 {
-        margin-bottom: 0;
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        h2 {
+            margin-top: 0px;
+        }
     }
-}
 
-.subscribe-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 570px;
-
-    .form-inputs {
+    .subscribe-form {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 24px;
+        flex-direction: column;
+        max-width: 570px;
 
-        .subscribe-input {
-            box-sizing: border-box;
-            min-height: 50px;
-            min-width: 270px;
-            padding-left: 20px;
-            border: 2px solid $light;
-            border-radius: 3px;
-            box-sizing: border-box;
-            background: transparent;
-            font-weight: 700;
-            color: $white;
+        .form-inputs {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+
+            .subscribe-input {
+                box-sizing: border-box;
+                min-height: 50px;
+                min-width: 270px;
+                padding-left: 20px;
+                border: 2px solid $light;
+                border-radius: 3px;
+                box-sizing: border-box;
+                background: transparent;
+                font-weight: 700;
+                color: $white;
+            }
+
+            .subscribe-input::placeholder {
+                color: $white;
+                opacity: 1;
+            }
+
         }
 
-        .subscribe-input::placeholder {
+        .subscribe-btn {
+            border: none;
+            margin-top: 1.5rem;
+            background-color: $greenBtn;
+            font-family: Arial, Helvetica, sans-serif;
             color: $white;
-            opacity: 1;
+            font-size: 13px;
         }
-
-    }
-
-    .subscribe-btn {
-        border: none;
-        margin-top: 1.5rem;
-        background-color: $greenBtn;
-        font-family: Arial, Helvetica, sans-serif;
-        color: $white;
-        font-size: 13px;
     }
 }

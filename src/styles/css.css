@@ -34,11 +34,8 @@ body {
   text-transform: uppercase;
 }
 
-.title-text {
-  text-align: center;
-}
-.title-text h1 {
-  margin-bottom: 0;
+.section-title {
+  margin: 0px;
 }
 
 .small-text12 {
@@ -137,24 +134,28 @@ header .top-menu .main-search {
   width: 248px;
   box-sizing: border-box;
 }
-
-.form-title h1 {
-  margin-bottom: 0;
+header .title-text {
+  text-align: center;
 }
-
-.subscribe-form {
+header .title-text h1 {
+  margin-bottom: 0px;
+}
+header .title-text h2 {
+  margin-top: 0px;
+}
+header .subscribe-form {
   display: flex;
   flex-direction: column;
   max-width: 570px;
 }
-.subscribe-form .form-inputs {
+header .subscribe-form .form-inputs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
 }
-.subscribe-form .form-inputs .subscribe-input {
+header .subscribe-form .form-inputs .subscribe-input {
   box-sizing: border-box;
   min-height: 50px;
   min-width: 270px;
@@ -166,11 +167,11 @@ header .top-menu .main-search {
   font-weight: 700;
   color: #cacaca;
 }
-.subscribe-form .form-inputs .subscribe-input::placeholder {
+header .subscribe-form .form-inputs .subscribe-input::placeholder {
   color: #cacaca;
   opacity: 1;
 }
-.subscribe-form .subscribe-btn {
+header .subscribe-form .subscribe-btn {
   border: none;
   margin-top: 1.5rem;
   background-color: #34C176;
@@ -230,7 +231,7 @@ h4 {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 .page-app .app-info .text-app,
@@ -683,9 +684,10 @@ footer .line {
     flex-direction: column-reverse;
   }
   .page-app {
-    padding: 100px 0 100px 0;
     align-items: center;
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .page-app .app-info {
     display: flex;
