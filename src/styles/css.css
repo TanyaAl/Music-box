@@ -46,6 +46,7 @@ body {
 .small-text16 {
   font-size: 16px;
   margin: 0;
+  line-height: 1.5;
 }
 
 .btn {
@@ -356,7 +357,7 @@ footer .line {
   border-radius: 1rem;
 }
 .price-card .card-title {
-  margin-top: 24px;
+  margin-top: 16px;
   margin-bottom: 200px;
   font-size: 24px;
 }
@@ -657,18 +658,17 @@ footer .line {
     margin-top: 1.5rem;
   }
   .page-pricing {
-    padding: 100px 20px 0 20px;
     align-items: center;
     width: 100%;
-  }
-  .page-pricing .form-title {
-    margin-top: 16px;
   }
   .page-pricing .container-pricing {
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-content: center;
+  }
+  .page-pricing .container-pricing .price-card {
+    height: 595px;
   }
   .page-pricing .container-pricing .price-card h3 {
     font-size: 16px;

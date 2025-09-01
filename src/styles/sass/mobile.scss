@@ -79,13 +79,13 @@
   }
 
   .page-pricing {
-    padding: 100px 20px 0 20px;
+    // padding: 100px 20px 0 20px;
     align-items: center;
     width: 100%;
 
-    .form-title {
-      margin-top: 16px;
-    }
+    // .form-title {
+    //   margin-top: 16px;
+    // }
 
     .container-pricing {
       display: flex;
@@ -94,6 +94,8 @@
       align-content: center;
 
       .price-card {
+        height: 595px;
+
         h3 {
           font-size: 16px;
           // font-weight: bold;
@@ -104,7 +106,6 @@
   }
 
   .page-news {
-    // padding: 100px 0 0 0;
     align-items: center;
     width: 100%;
 
