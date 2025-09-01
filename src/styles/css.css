@@ -253,6 +253,7 @@ h4 {
   border-radius: 32px;
   background-color: #95390C;
   color: #fff;
+  line-height: 1.5;
   padding: 16px 40px;
 }
 
@@ -709,6 +710,9 @@ footer .line {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .page-app .app-info .text-app {
+    margin-top: 8px;
   }
   footer .footer {
     padding: 3rem 20px 2rem 20px;
