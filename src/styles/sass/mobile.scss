@@ -22,10 +22,8 @@
 
   header {
     position: relative;
-    // padding: 200px 20px;
     width: 100%;
-    padding-top: 260px;
-    // height: 100vh;
+    padding-top: 250px;
     display: flex;
     justify-content: center;
 
@@ -54,6 +52,7 @@
 
         .text-logo {
           margin: 0;
+          font-weight: bold;
         }
 
       }

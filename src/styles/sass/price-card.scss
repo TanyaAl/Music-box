@@ -23,13 +23,15 @@
         line-height: 1em;
         margin-bottom: 40px;
         position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .price-text-card {
         font-size: 32px;
-        margin: 0;
-        position: absolute;
-        top: -8px;
+        position: relative;
+        bottom: 8px;
     }
 
     .price-number-card {

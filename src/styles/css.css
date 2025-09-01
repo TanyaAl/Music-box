@@ -369,12 +369,14 @@ footer .line {
   line-height: 1em;
   margin-bottom: 40px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .price-card .price-text-card {
   font-size: 32px;
-  margin: 0;
-  position: absolute;
-  top: -8px;
+  position: relative;
+  bottom: 8px;
 }
 .price-card .price-number-card {
   margin-right: 16px;
@@ -609,7 +611,7 @@ footer .line {
   header {
     position: relative;
     width: 100%;
-    padding-top: 260px;
+    padding-top: 250px;
     display: flex;
     justify-content: center;
   }
@@ -637,6 +639,7 @@ footer .line {
   }
   header .top-menu .left-menu .text-logo {
     margin: 0;
+    font-weight: bold;
   }
   header .top-menu .main-search {
     margin: 0;
