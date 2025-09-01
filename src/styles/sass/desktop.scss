@@ -64,6 +64,7 @@ h4 {
       flex-direction: column;
       align-items: flex-start;
       text-align: left;
+      margin-top: 16px;
     }
 
     .download-btn {
@@ -72,7 +73,7 @@ h4 {
       background-color: $darkOrange;
       color: $white;
       padding: 16px 40px;
-      margin-top: 16px;
+      // margin-top: 16px;
     }
   }
 }
