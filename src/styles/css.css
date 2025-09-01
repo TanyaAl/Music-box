@@ -635,6 +635,9 @@ footer .line {
     margin-top: 16px;
     margin-bottom: 16px;
   }
+  header .top-menu .left-menu .text-logo {
+    margin: 0;
+  }
   header .top-menu .main-search {
     margin: 0;
     width: 100%;
