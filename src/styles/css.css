@@ -728,6 +728,9 @@ footer .line {
     left: 0;
     right: 0;
   }
+  .artist-page .top-menu .text-logo {
+    margin: 0;
+  }
   .artist-page .top-menu .main-search {
     width: 100%;
   }

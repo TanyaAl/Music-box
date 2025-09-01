@@ -106,9 +106,6 @@
     width: 100%;
 
     .news-container {
-      // .news-block {}
-
-
       .news-block {
         display: flex;
         flex-direction: column;
@@ -181,6 +178,10 @@
     .top-menu {
       left: 0;
       right: 0;
+
+      .text-logo {
+        margin: 0;
+      }
 
       .main-search {
         width: 100%;
