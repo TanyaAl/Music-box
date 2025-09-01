@@ -673,14 +673,14 @@ footer .line {
     align-items: center;
     width: 100%;
   }
-  .page-news .news-container .news-title {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 16px;
-  }
   .page-news .news-container .news-block {
     display: flex;
     flex-direction: column;
+  }
+  .page-news .news-container .news-block .body-news .news-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
   }
   .page-news .news-container .news-block .news-img {
     display: flex;
