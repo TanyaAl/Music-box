@@ -609,7 +609,7 @@ footer .line {
   border-radius: 50%;
 }
 .singer h4 {
-  margin-top: 16px;
+  margin-top: 18px;
   margin-bottom: 0;
 }
 .singer p {
@@ -814,6 +814,9 @@ footer .line {
   .page-similar .singer img {
     height: 137px;
     width: 137px;
+  }
+  .page-similar .singer .h4 {
+    margin-top: 18px;
   }
   .page-similar .singer p {
     font-size: 16px;
