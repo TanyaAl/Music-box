@@ -147,8 +147,13 @@
       flex-direction: column-reverse;
       align-items: center;
 
-      .text-app {
-        margin-top: 8px;
+      // .text-app {
+      //   margin-top: 8px;
+      // }
+
+      .img-app {
+        height: auto;
+        max-height: 275px;
       }
     }
   }

@@ -45,6 +45,7 @@ h4 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border: 1px solid red;
 
   .app-info {
     max-width: 1200px;
@@ -53,6 +54,7 @@ h4 {
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
+    gap: 16px;
 
     .text-app,
     .img-app {
@@ -65,6 +67,10 @@ h4 {
       align-items: flex-start;
       text-align: left;
       margin-top: 16px;
+    }
+
+    .img-app {
+      height: 275px;
     }
 
     .download-btn {
