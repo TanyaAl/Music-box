@@ -322,6 +322,7 @@ footer .line {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border: 1px solid red;
 }
 .page-pricing .container-pricing {
   display: flex;
@@ -435,6 +436,9 @@ footer .line {
 }
 .page-news .news-container .news-block .body-news .news-btn {
   padding: 16px 30px;
+}
+.page-news .news-container .news-block.reverse .news-author {
+  margin-top: 16px;
 }
 
 .artist-page {
