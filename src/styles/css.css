@@ -131,7 +131,7 @@ header .top-menu .main-search {
   border-radius: 50px;
   font-family: Roboto;
   padding-left: 10px;
-  height: 25px;
+  height: 27px;
   width: 248px;
   box-sizing: border-box;
 }
@@ -640,7 +640,7 @@ footer .line {
     flex-direction: column;
     gap: 0;
     margin-top: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   header .top-menu .left-menu .text-logo {
     margin: 0;
