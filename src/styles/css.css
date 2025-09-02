@@ -644,7 +644,7 @@ footer .line {
     font-weight: bold;
   }
   header .top-menu .main-search {
-    margin: 0;
+    margin-top: 2px;
     width: 100%;
   }
   header .form-inputs {
@@ -670,6 +670,7 @@ footer .line {
   }
   .page-pricing .container-pricing .price-card {
     height: 595px;
+    width: 374px;
   }
   .page-pricing .container-pricing .price-card h3 {
     font-size: 16px;
