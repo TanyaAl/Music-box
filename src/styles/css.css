@@ -717,6 +717,9 @@ footer .line {
     flex-direction: column-reverse;
     align-items: center;
   }
+  .page-app .app-info .text-app {
+    margin-top: 0;
+  }
   .page-app .app-info .img-app {
     height: auto;
     max-height: 275px;
