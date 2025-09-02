@@ -619,7 +619,6 @@ footer .line {
     padding-top: 250px;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
   }
   header .top-menu {
     position: absolute;
