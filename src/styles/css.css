@@ -228,7 +228,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 1px solid red;
 }
 .page-app .app-info {
   max-width: 1200px;
@@ -327,7 +326,6 @@ footer .line {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 1px solid red;
 }
 .page-pricing .container-pricing {
   display: flex;
