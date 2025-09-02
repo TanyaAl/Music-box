@@ -375,14 +375,13 @@ footer .line {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 16px;
 }
 .price-card .price-text-card {
   font-size: 32px;
   position: relative;
-  bottom: 8px;
-}
-.price-card .price-number-card {
-  margin-right: 16px;
+  bottom: 10px;
+  right: 5px;
 }
 
 .page-news {
