@@ -2,6 +2,7 @@
     grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
 
     h2 {
         text-align: left;
@@ -10,16 +11,28 @@
 
     .track-list {
         display: flex;
-        flex-direction: row;
-        gap: 50px;
+        flex-direction: column;
         width: 100%;
+        gap: 25px;
 
-        .left-column {
-            flex: 1;
+        .popular-track {
+            flex: 1 1 calc(50% - 50px);
+            height: 55px;
+
+            .track-duration {
+                margin-right: 50px;
+            }
         }
 
-        .right-column {
-            flex: 1;
+        .tracks-row {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .title-track {
+                height: 55px;
+            }
         }
 
         .tracks {
@@ -31,6 +44,7 @@
                 margin: 0;
                 text-align: left;
             }
+
         }
     }
 }

@@ -218,13 +218,21 @@
   }
 
   .page-popular-track {
-    // height: 100vh;
     align-items: flex-start;
 
     .track-list {
       display: flex;
       flex-direction: column;
       gap: 25px;
+
+      .tracks-row {
+        flex-direction: column;
+        gap: 25px;
+
+        .track-duration {
+          margin-right: 0;
+        }
+      }
     }
   }
 

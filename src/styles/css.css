@@ -491,6 +491,7 @@ footer .line {
   grid-column: 1/-1;
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
 }
 .page-popular-track h2 {
   text-align: left;
@@ -498,15 +499,25 @@ footer .line {
 }
 .page-popular-track .track-list {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
+  flex-direction: column;
   width: 100%;
+  gap: 25px;
 }
-.page-popular-track .track-list .left-column {
-  flex: 1;
+.page-popular-track .track-list .popular-track {
+  flex: 1 1 calc(50% - 50px);
+  height: 55px;
 }
-.page-popular-track .track-list .right-column {
-  flex: 1;
+.page-popular-track .track-list .popular-track .track-duration {
+  margin-right: 50px;
+}
+.page-popular-track .track-list .tracks-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.page-popular-track .track-list .tracks-row .title-track {
+  height: 55px;
 }
 .page-popular-track .track-list .tracks {
   display: flex;
@@ -786,6 +797,13 @@ footer .line {
     display: flex;
     flex-direction: column;
     gap: 25px;
+  }
+  .page-popular-track .track-list .tracks-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .page-popular-track .track-list .tracks-row .track-duration {
+    margin-right: 0;
   }
   .page-discography .album {
     width: 140px;
