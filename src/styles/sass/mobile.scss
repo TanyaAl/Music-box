@@ -58,7 +58,6 @@
       }
 
       .main-search {
-        // margin-top: 2px;
         width: 100%;
       }
     }
@@ -91,10 +90,15 @@
       .price-card {
         height: 595px;
         width: 374px;
+        background-position: inherit;
 
         h3 {
           font-size: 16px;
           line-height: 24px;
+        }
+
+        .wrap {
+          display: none;
         }
       }
     }
