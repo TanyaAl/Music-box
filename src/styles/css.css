@@ -387,6 +387,11 @@ footer .line {
   bottom: 10px;
   right: 5px;
 }
+.price-card .price-number-card {
+  position: relative;
+  bottom: 4px;
+  right: 4px;
+}
 
 .page-news {
   grid-column: 1/-1;
