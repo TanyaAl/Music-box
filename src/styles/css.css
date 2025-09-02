@@ -550,6 +550,7 @@ footer .line {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  border: 1px solid red;
 }
 .page-discography h2 {
   margin-bottom: 50px;
@@ -805,11 +806,11 @@ footer .line {
     margin-right: 0;
   }
   .page-discography .album {
-    width: 140px;
+    width: 138px;
   }
   .page-discography .album img {
-    height: 137px;
-    width: 137px;
+    height: auto;
+    width: 100%;
   }
   .page-similar .singer img {
     height: 137px;
