@@ -758,8 +758,11 @@ footer .line {
     display: flex;
     flex-direction: column;
   }
-  footer .footer .footer-columns .footer-column {
+  footer .footer .footer-columns .footer-column ul {
     margin-bottom: 0;
+  }
+  footer .footer .footer-columns .footer-icons {
+    margin-bottom: 16px;
   }
   footer .footer .footer-bottom {
     margin-bottom: 16px;
