@@ -163,16 +163,22 @@
 
   footer {
     .footer {
-      padding: 3rem 20px 2rem 20px;
-
       .footer-columns {
         display: flex;
         flex-direction: column;
+
+        .footer-column {
+          margin-bottom: 0;
+        }
       }
 
-      .footer-row {
-        display: flex;
-        flex-direction: column;
+      .footer-bottom {
+        margin-bottom: 16px;
+
+        .footer-row {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
   }

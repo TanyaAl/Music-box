@@ -45,7 +45,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  // border: 1px solid red;
 
   .app-info {
     max-width: 1200px;
@@ -80,7 +79,6 @@ h4 {
       color: $white;
       line-height: 1.5;
       padding: 16px 40px;
-      // margin-top: 16px;
     }
   }
 }
@@ -101,40 +99,51 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      gap: 14px;
       padding: 3rem 0 3rem 0;
 
-      .footer-title {
-        font-size: 18px;
-        line-height: 27px;
-        text-align: left;
-        font-weight: bold;
-        color: $white;
+      .footer-column {
+        width: 270px;
+
+        .footer-title {
+          font-size: 18px;
+          line-height: 27px;
+          text-align: left;
+          font-weight: bold;
+          color: $white;
+          margin-top: 16px;
+        }
+
+        .footer-icons {
+          margin-top: 16px;
+          display: flex;
+          gap: 24px;
+
+          >img {
+            width: 23px;
+          }
+        }
       }
 
-      .footer-icons {
-        margin-top: 16px;
-        margin-bottom: 2rem;
-        display: flex;
-        gap: 16px;
-      }
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+  }
 
-      a {
-        font-size: 16px;
-        line-height: 24px;
-        text-decoration: none;
-        color: $white;
-      }
+  ul {
+    list-style: none;
+    // margin-bottom: 0;
+    padding: 0;
+
+    a {
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+      color: $white;
     }
   }
 
   .footer-bottom {
     padding: 2rem 0 2rem 0;
-
 
     .footer-row {
       position: relative;
@@ -151,6 +160,7 @@ footer {
     width: 100vw;
     position: relative;
     left: 50%;
+    top: 8px;
     transform: translateX(-50%);
   }
 
