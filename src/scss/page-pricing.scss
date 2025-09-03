@@ -7,8 +7,7 @@
 
     .container-pricing {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         justify-content: center;
         margin-top: 50px;
         gap: 50px;

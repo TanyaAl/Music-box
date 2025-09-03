@@ -1,4 +1,4 @@
-@media (max-width: 414px) {
+@media (width <= 414px) {
   h1 {
     font-size: 30px;
     line-height: 45px;
@@ -196,7 +196,7 @@
     padding-bottom: 227px;
 
     .artist-title {
-      padding-left: 0px;
+      padding-left: 0;
     }
 
     .top-menu {

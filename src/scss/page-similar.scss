@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 100px;
-    // border: 1px solid red;
+    // border: 1px solid red;border
 
     h2 {
         margin-bottom: 50px;
@@ -12,8 +12,7 @@
 
     .similar-container {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         align-items: flex-start;
         gap: 25px 50px;
 
