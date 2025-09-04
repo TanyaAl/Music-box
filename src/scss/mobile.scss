@@ -121,6 +121,7 @@
           }
         }
 
+        /* stylelint-disable-next-line no-descending-specificity */
         .news-img {
           display: flex;
           justify-content: center;
@@ -256,10 +257,9 @@
   }
 
   .page-similar {
+
     /* stylelint-disable-next-line no-descending-specificity */
-
     .singer {
-
       >img {
         height: 137px;
         width: 137px;
