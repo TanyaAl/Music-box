@@ -121,12 +121,12 @@
           }
         }
 
-        /* stylelint-disable-next-line no-descending-specificity */
         .news-img {
           display: flex;
           justify-content: center;
           align-items: center;
 
+          /* stylelint-disable-next-line no-descending-specificity */
           >img {
             max-width: 100%;
           }
@@ -244,11 +244,10 @@
   }
 
   .page-discography {
-
-    /* stylelint-disable-next-line no-descending-specificity */
     .album {
       width: 138px;
 
+      /* stylelint-disable-next-line no-descending-specificity */
       >img {
         height: auto;
         width: 100%;
@@ -257,9 +256,9 @@
   }
 
   .page-similar {
-
-    /* stylelint-disable-next-line no-descending-specificity */
     .singer {
+
+      /* stylelint-disable-next-line no-descending-specificity */
       >img {
         height: 137px;
         width: 137px;
