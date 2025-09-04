@@ -1,4 +1,4 @@
-@media (width <= 414px) {
+@media (width <=414px) {
   h1 {
     font-size: 30px;
     line-height: 45px;
@@ -203,10 +203,6 @@
       left: 0;
       right: 0;
 
-      .text-logo {
-        margin: 0;
-      }
-
       .main-search {
         width: 100%;
       }
@@ -250,7 +246,7 @@
     .album {
       width: 138px;
 
-      img {
+      >img {
         height: auto;
         width: 100%;
       }
@@ -259,7 +255,7 @@
 
   .page-similar {
     .singer {
-      img {
+      >img {
         height: 137px;
         width: 137px;
       }
