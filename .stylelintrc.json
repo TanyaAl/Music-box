@@ -2,5 +2,7 @@
     "extends": [
         "stylelint-config-standard"
     ],
-    "at-rule-no-unknown": null
+    "rules": {
+        "at-rule-no-unknown": null
+    }
 }
