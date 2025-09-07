@@ -1,3 +1,4 @@
+/* stylelint-disable-next-line import-notation */
 @font-face {
   font-family: Roboto;
   src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
@@ -78,6 +79,10 @@ body {
   font-weight: bold;
 }
 
+a {
+  color: #fff;
+}
+
 header {
   position: relative;
   display: flex;
@@ -127,7 +132,7 @@ header .top-menu .main-search {
   border: none;
   margin-left: auto;
   border-radius: 50px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   padding-left: 10px;
   height: 27px;
   width: 248px;
@@ -303,7 +308,6 @@ footer ul a {
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
-  color: #fff;
 }
 footer .footer-bottom {
   padding: 2rem 0;
@@ -720,6 +724,7 @@ footer .line {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* stylelint-disable-next-line no-descending-specificity */
   }
   .page-news .news-container .news-block .news-img > img {
     max-width: 100%;
@@ -777,9 +782,6 @@ footer .line {
     left: 0;
     right: 0;
   }
-  .artist-page .top-menu .text-logo {
-    margin: 0;
-  }
   .artist-page .top-menu .main-search {
     width: 100%;
   }
@@ -811,12 +813,16 @@ footer .line {
   }
   .page-discography .album {
     width: 138px;
+    /* stylelint-disable-next-line no-descending-specificity */
   }
-  .page-discography .album img {
+  .page-discography .album > img {
     height: auto;
     width: 100%;
   }
-  .page-similar .singer img {
+  .page-similar .singer {
+    /* stylelint-disable-next-line no-descending-specificity */
+  }
+  .page-similar .singer > img {
     height: 137px;
     width: 137px;
   }
