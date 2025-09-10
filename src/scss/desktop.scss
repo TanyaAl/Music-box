@@ -97,7 +97,7 @@ footer {
 
     .footer-columns {
       display: flex;
-      flex-direction: row;
+      flex-flow: row wrap;
       justify-content: space-between;
       gap: 14px;
       padding: 3rem 0;
@@ -146,7 +146,7 @@ footer {
     .footer-row {
       position: relative;
       display: flex;
-      flex-direction: row;
+      flex-flow: row wrap;
       gap: 16px;
     }
 
